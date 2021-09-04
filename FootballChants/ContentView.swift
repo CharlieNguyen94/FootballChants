@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(viewModel.teams) { team in
-                TeamCardView(team: team)
+                TeamCardView(team: team, handler: { _ in })
             }
         }
     }

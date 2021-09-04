@@ -9,7 +9,11 @@ import SwiftUI
 
 struct TeamCardView: View {
     
+    typealias ChantPlaybackHandler = (_ team: Team) -> Void
+    
     let team: Team
+    
+    var handler: ChantPlaybackHandler
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -48,7 +52,9 @@ struct TeamCardView: View {
                 
                 Spacer()
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    handler(team)
+                }, label: {
                     Image(systemName: "play.circle.fill")
                         .resizable()
                         .scaledToFit()
@@ -65,11 +71,11 @@ struct TeamCardView: View {
 struct TeamCardView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TeamCardView(team: Team.dummyData[0])
+            TeamCardView(team: Team.dummyData[0], handler: { _ in })
                 .previewLayout(PreviewLayout.fixed(width: 400, height: 150))
                 .padding()
                 .previewDisplayName("Team Card Preview 1")
-            TeamCardView(team: Team.dummyData[2])
+            TeamCardView(team: Team.dummyData[2], handler: { _ in })
                 .previewLayout(PreviewLayout.fixed(width: 400, height: 150))
                 .padding()
                 .previewDisplayName("Team Card Preview 2")
