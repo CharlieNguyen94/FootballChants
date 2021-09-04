@@ -44,7 +44,7 @@ struct ContentView: View {
                     .frame(maxWidth: 40, maxHeight: .infinity, alignment: .center)
                 }
             }
-            .modifier(TeamCardViewModifier(teamType: team.id))
+            .applyTeamCardStyle(teamType: team.id)
         }
     }
     

@@ -18,6 +18,10 @@ struct TeamCardViewModifier: ViewModifier {
             .background(teamType.background)
             .cornerRadius(10)
     }
-    
-    
+}
+
+extension View {
+    func applyTeamCardStyle(teamType: TeamType) -> some View {
+        self.modifier(TeamCardViewModifier(teamType: teamType))
+    }
 }
