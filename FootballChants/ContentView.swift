@@ -13,14 +13,16 @@ struct ContentView: View {
     
     var body: some View {
         ScrollView {
-            LazyVStack {
+            LazyVStack(spacing: 24) {
                 ForEach(viewModel.teams) { team in
                     TeamCardView(team: team) { selectedTeam in
                         viewModel.togglePlayback(for: selectedTeam)
                     }
                 }
             }
+            .padding(.top, 8)
         }
+        .padding(.horizontal, 8)
     }
 }
 
