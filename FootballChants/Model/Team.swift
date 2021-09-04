@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Team {
+struct Team: Identifiable {
     
     let id: TeamType
     let name: String

@@ -9,21 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let team: Team
+    @ObservedObject var viewModel = TeamsViewModel()
     
     var body: some View {
-        List(0..<5) { item in
-            TeamCardView(team: team)
+        List {
+            ForEach(viewModel.teams) { team in
+                TeamCardView(team: team)
+            }
         }
-    }
-    
-    func greetings() {
-        print("Hello world")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(team: Team.dummyData[0])
+        ContentView()
     }
 }
