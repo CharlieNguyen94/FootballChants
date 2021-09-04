@@ -12,10 +12,12 @@ struct ContentView: View {
     @ObservedObject var viewModel = TeamsViewModel()
     
     var body: some View {
-        List {
-            ForEach(viewModel.teams) { team in
-                TeamCardView(team: team) { selectedTeam in
-                    viewModel.togglePlayback(for: selectedTeam)
+        ScrollView {
+            LazyVStack {
+                ForEach(viewModel.teams) { team in
+                    TeamCardView(team: team) { selectedTeam in
+                        viewModel.togglePlayback(for: selectedTeam)
+                    }
                 }
             }
         }
