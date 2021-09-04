@@ -35,6 +35,7 @@
 		956F067126E3B79D005E71EF /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F067026E3B79D005E71EF /* TeamsViewModel.swift */; };
 		956F067426E3CF4D005E71EF /* TeamCardViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F067326E3CF4D005E71EF /* TeamCardViewModifier.swift */; };
 		956F067726E3D184005E71EF /* TeamCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F067626E3D184005E71EF /* TeamCardView.swift */; };
+		956F067926E3E336005E71EF /* AudioManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F067826E3E336005E71EF /* AudioManagerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		956F067026E3B79D005E71EF /* TeamsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 		956F067326E3CF4D005E71EF /* TeamCardViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardViewModifier.swift; sourceTree = "<group>"; };
 		956F067626E3D184005E71EF /* TeamCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCardView.swift; sourceTree = "<group>"; };
+		956F067826E3E336005E71EF /* AudioManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManagerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				956F067026E3B79D005E71EF /* TeamsViewModel.swift */,
+				956F067826E3E336005E71EF /* AudioManagerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				956F067726E3D184005E71EF /* TeamCardView.swift in Sources */,
 				956F066826E3B3EE005E71EF /* Teams.swift in Sources */,
 				956F063326E3935C005E71EF /* ContentView.swift in Sources */,
+				956F067926E3E336005E71EF /* AudioManagerViewModel.swift in Sources */,
 				956F063126E3935C005E71EF /* FootballChantsApp.swift in Sources */,
 				956F067426E3CF4D005E71EF /* TeamCardViewModifier.swift in Sources */,
 				956F066E26E3B5FA005E71EF /* Manager.swift in Sources */,

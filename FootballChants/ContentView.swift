@@ -11,12 +11,15 @@ struct ContentView: View {
     
     @ObservedObject var viewModel = TeamsViewModel()
     
+    private let audioManager = AudioManagerViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVStack(spacing: 24) {
                     ForEach(viewModel.teams) { team in
                         TeamCardView(team: team) { selectedTeam in
+                            audioManager.playback(selectedTeam)
                             viewModel.togglePlayback(for: selectedTeam)
                         }
                     }
