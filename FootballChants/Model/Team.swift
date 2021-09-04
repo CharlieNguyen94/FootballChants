@@ -16,6 +16,14 @@ struct Team: Identifiable {
     let founded: String
     var isPlaying: Bool = false
     
+    mutating func togglePlayback() {
+        self.isPlaying.toggle()
+    }
+    
+    mutating func setIsPlayback(state: Bool) {
+        self.isPlaying = state
+    }
+    
 }
 
 extension Team {

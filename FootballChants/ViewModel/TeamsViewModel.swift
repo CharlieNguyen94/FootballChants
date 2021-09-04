@@ -106,4 +106,18 @@ class TeamsViewModel: ObservableObject {
              manager: .init(name: "Nuno Espírito Santo", job: .headCoach),
              founded: "1877"),
     ]
+    
+    func togglePlayback(for team: Team) {
+        
+        for index in teams.indices {
+            if teams[index].id == team.id {
+                teams[index].togglePlayback()
+            } else {
+                teams[index].setIsPlayback(state: false)
+            }
+        }
+        
+    }
+    
+    
 }
