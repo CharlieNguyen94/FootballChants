@@ -44,10 +44,7 @@ struct ContentView: View {
                     .frame(maxWidth: 40, maxHeight: .infinity, alignment: .center)
                 }
             }
-            .padding(8)
-            .foregroundColor(.white)
-            .background(team.id.background)
-            .cornerRadius(10)
+            .modifier(TeamCardViewModifier(teamType: team.id))
         }
     }
     
