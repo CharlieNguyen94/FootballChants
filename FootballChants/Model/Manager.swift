@@ -7,12 +7,12 @@
 
 import Foundation
 
-enum JobType {
+enum Job {
     case manager
     case headCoach
 }
 
 struct Manager {
     let name: String
-    let jobType: JobType
+    let job: Job
 }
