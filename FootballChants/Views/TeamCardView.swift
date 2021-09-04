@@ -55,7 +55,7 @@ struct TeamCardView: View {
                 Button(action: {
                     handler(team)
                 }, label: {
-                    Image(systemName: "play.circle.fill")
+                    Image(systemName: team.isPlaying ? "pause.circle.fill" : "play.circle.fill")
                         .resizable()
                         .scaledToFit()
                 })

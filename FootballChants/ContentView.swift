@@ -15,7 +15,7 @@ struct ContentView: View {
         List {
             ForEach(viewModel.teams) { team in
                 TeamCardView(team: team) { selectedTeam in
-                    print("Selected Team: \(selectedTeam)")
+                    viewModel.togglePlayback(for: selectedTeam)
                 }
             }
         }
