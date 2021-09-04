@@ -19,9 +19,26 @@ struct Team {
 }
 
 extension Team {
-    var dummyData: [Team] {
+    static var dummyData: [Team] {
         return [
-            Team(id: .manchesterUnited, name: "Team 1", info: "This is dummy data", manager: Manager(name: "Manager 1", job: .manager), founded: "1800")
+            Team(id: .manchesterUnited,
+                 name: "Team 1",
+                 info: "This is dummy data",
+                 manager: Manager(name: "Manager 1",
+                                  job: .manager),
+                 founded: "1800"),
+            Team(id: .arsenal,
+                 name: "Team 2",
+                 info: "This is dummy data",
+                 manager: Manager(name: "Manager 2",
+                                  job: .manager),
+                 founded: "1840"),
+            Team(id: .liverpool,
+                 name: "Team 3",
+                 info: "This is dummy data",
+                 manager: Manager(name: "Head Coach 1",
+                                  job: .headCoach),
+                 founded: "1840")
         ]
     }
 }
