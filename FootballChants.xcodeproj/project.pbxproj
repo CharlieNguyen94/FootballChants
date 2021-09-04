@@ -30,6 +30,8 @@
 		956F066626E3B3EE005E71EF /* arsenal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 956F065326E3B3EE005E71EF /* arsenal.mp3 */; };
 		956F066726E3B3EE005E71EF /* everton.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 956F065426E3B3EE005E71EF /* everton.mp3 */; };
 		956F066826E3B3EE005E71EF /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F065526E3B3EE005E71EF /* Teams.swift */; };
+		956F066C26E3B520005E71EF /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F066B26E3B520005E71EF /* Team.swift */; };
+		956F066E26E3B5FA005E71EF /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F066D26E3B5FA005E71EF /* Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		956F065326E3B3EE005E71EF /* arsenal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = arsenal.mp3; sourceTree = "<group>"; };
 		956F065426E3B3EE005E71EF /* everton.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = everton.mp3; sourceTree = "<group>"; };
 		956F065526E3B3EE005E71EF /* Teams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
+		956F066B26E3B520005E71EF /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		956F066D26E3B5FA005E71EF /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		956F062F26E3935C005E71EF /* FootballChants */ = {
 			isa = PBXGroup;
 			children = (
+				956F066A26E3B50C005E71EF /* New Group */,
+				956F066926E3B506005E71EF /* Model */,
 				956F064126E3B3EE005E71EF /* Resources */,
 				956F063026E3935C005E71EF /* FootballChantsApp.swift */,
 				956F063226E3935C005E71EF /* ContentView.swift */,
@@ -140,6 +146,22 @@
 				956F065426E3B3EE005E71EF /* everton.mp3 */,
 			);
 			path = Chants;
+			sourceTree = "<group>";
+		};
+		956F066926E3B506005E71EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				956F066B26E3B520005E71EF /* Team.swift */,
+				956F066D26E3B5FA005E71EF /* Manager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		956F066A26E3B50C005E71EF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956F066C26E3B520005E71EF /* Team.swift in Sources */,
 				956F066826E3B3EE005E71EF /* Teams.swift in Sources */,
 				956F063326E3935C005E71EF /* ContentView.swift in Sources */,
 				956F063126E3935C005E71EF /* FootballChantsApp.swift in Sources */,
+				956F066E26E3B5FA005E71EF /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
