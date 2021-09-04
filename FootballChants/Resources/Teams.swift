@@ -31,9 +31,52 @@ enum TeamType {
 
 extension TeamType {
     
+    var managerImage: String {
+        switch self {
+        case .arsenal:
+            return ""
+        case .astonVilla:
+            return ""
+        case .brighton:
+            return ""
+        case .burnley:
+            return ""
+        case .chelsea:
+            return ""
+        case .everton:
+            return ""
+        case .fulham:
+            return ""
+        case .leeds:
+            return ""
+        case .leicester:
+            return ""
+        case .liverpool:
+            return ""
+        case .manchesterUnited:
+            return "OGS"
+        case .manchesterCity:
+            return ""
+        case .newcastle:
+            return ""
+        case .palace:
+            return ""
+        case .sheffield:
+            return ""
+        case .southampton:
+            return ""
+        case .tottenham:
+            return ""
+        case .westBrom:
+            return ""
+        case .wolves:
+            return ""
+        }
+    }
+    
     var badge: String {
         switch self {
-
+        
         case .arsenal:
             return "arsenal_ic"
         case .astonVilla:
@@ -77,7 +120,7 @@ extension TeamType {
     
     var background: Color {
         switch self {
-
+        
         case .arsenal:
             return Color("arsenal_bg")
         case .astonVilla:
@@ -121,7 +164,7 @@ extension TeamType {
     
     var chantFile: String {
         switch self {
-
+        
         case .arsenal:
             return "arsenal"
         case .astonVilla:

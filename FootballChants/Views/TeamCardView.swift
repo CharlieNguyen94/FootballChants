@@ -43,6 +43,12 @@ struct TeamCardView: View {
                         .accessibility(label: Text("\(team.manager.job.rawValue)"))
                         .accessibility(value: Text(team.manager.name))
                     
+                    Image(team.id.managerImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 50, height: 50)
+                        .accessibility(label: Text("\(team.id.managerImage) Manager Image"))
+                    
                     Text(team.info)
                         .font(.system(size: 12, weight: .medium))
                         .accessibility(label: Text("Information"))
