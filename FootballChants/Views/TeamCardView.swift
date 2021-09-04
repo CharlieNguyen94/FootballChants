@@ -20,27 +20,42 @@ struct TeamCardView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50, height: 50)
+                    .accessibility(label: Text("\(team.name) Badge"))
                 
                 VStack(alignment: .leading, spacing: 5) {
+                    
                     Text(team.name)
                         .font(.system(size: 18, weight: .bold))
+                        .accessibility(label: Text("Team Name"))
+                        .accessibility(value: Text(team.name))
+                    
                     Text("Founded: \(team.founded)")
                         .font(.system(size: 12, weight: .light))
+                        .accessibility(label: Text("Team Founded"))
+                        .accessibility(value: Text(team.founded))
+                    
                     Text("Current \(team.manager.job.rawValue): \(team.manager.name)")
                         .font(.system(size: 10, weight: .light))
+                        .accessibility(label: Text("\(team.manager.job.rawValue)"))
+                        .accessibility(value: Text(team.manager.name))
+                    
                     Text(team.info)
                         .font(.system(size: 12, weight: .medium))
+                        .accessibility(label: Text("Information"))
+                        .accessibility(value: Text(team.info))
                     
                 }
                 
                 Spacer()
-    
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                
+                Button(action: {}, label: {
                     Image(systemName: "play.circle.fill")
                         .resizable()
                         .scaledToFit()
                 })
                 .frame(maxWidth: 40, maxHeight: .infinity, alignment: .center)
+                .accessibilityElement(children: .ignore)
+                .accessibility(value: Text(team.isPlaying ? "Pause" : "Play"))
             }
         }
         .applyTeamCardStyle(teamType: team.id)
@@ -49,8 +64,15 @@ struct TeamCardView: View {
 
 struct TeamCardView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamCardView(team: Team.dummyData[0])
-            .previewLayout(PreviewLayout.fixed(width: 400, height: 150))
-            .padding()
+        Group {
+            TeamCardView(team: Team.dummyData[0])
+                .previewLayout(PreviewLayout.fixed(width: 400, height: 150))
+                .padding()
+                .previewDisplayName("Team Card Preview 1")
+            TeamCardView(team: Team.dummyData[2])
+                .previewLayout(PreviewLayout.fixed(width: 400, height: 150))
+                .padding()
+                .previewDisplayName("Team Card Preview 2")
+        }
     }
 }

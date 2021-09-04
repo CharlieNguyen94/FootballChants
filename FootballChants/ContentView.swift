@@ -12,8 +12,8 @@ struct ContentView: View {
     let team: Team
     
     var body: some View {
-        List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-            TeamCardView(team: Team.dummyData[0])
+        List(0..<5) { item in
+            TeamCardView(team: team)
         }
     }
     
