@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		956F063126E3935C005E71EF /* FootballChantsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F063026E3935C005E71EF /* FootballChantsApp.swift */; };
 		956F063326E3935C005E71EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F063226E3935C005E71EF /* ContentView.swift */; };
-		956F063526E3935E005E71EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956F063426E3935E005E71EF /* Assets.xcassets */; };
 		956F063826E3935E005E71EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956F063726E3935E005E71EF /* Preview Assets.xcassets */; };
+		956F064026E3B346005E71EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956F063F26E3B346005E71EF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		956F062D26E3935C005E71EF /* FootballChants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballChants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956F063026E3935C005E71EF /* FootballChantsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballChantsApp.swift; sourceTree = "<group>"; };
 		956F063226E3935C005E71EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		956F063426E3935E005E71EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		956F063726E3935E005E71EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		956F063926E3935E005E71EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956F063F26E3B346005E71EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 			children = (
 				956F063026E3935C005E71EF /* FootballChantsApp.swift */,
 				956F063226E3935C005E71EF /* ContentView.swift */,
-				956F063426E3935E005E71EF /* Assets.xcassets */,
 				956F063926E3935E005E71EF /* Info.plist */,
+				956F063F26E3B346005E71EF /* Assets.xcassets */,
 				956F063626E3935E005E71EF /* Preview Content */,
 			);
 			path = FootballChants;
@@ -126,8 +126,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956F064026E3B346005E71EF /* Assets.xcassets in Resources */,
 				956F063826E3935E005E71EF /* Preview Assets.xcassets in Resources */,
-				956F063526E3935E005E71EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
