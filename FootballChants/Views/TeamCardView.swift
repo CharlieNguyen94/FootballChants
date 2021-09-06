@@ -43,11 +43,15 @@ struct TeamCardView: View {
                         .accessibility(label: Text("\(team.manager.job.rawValue)"))
                         .accessibility(value: Text(team.manager.name))
                     
+                    if team.id.managerImage != "" {
+                    
                     Image(team.id.managerImage)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50)
                         .accessibility(label: Text("\(team.id.managerImage) Manager Image"))
+                        
+                    }
                     
                     Text(team.info)
                         .font(.system(size: 12, weight: .medium))
@@ -81,7 +85,7 @@ struct TeamCardView_Previews: PreviewProvider {
                 .previewLayout(PreviewLayout.fixed(width: 400, height: 150))
                 .padding()
                 .previewDisplayName("Team Card Preview 1")
-            TeamCardView(team: Team.dummyData[2], handler: { _ in })
+            TeamCardView(team: Team.dummyData[1], handler: { _ in })
                 .previewLayout(PreviewLayout.fixed(width: 400, height: 150))
                 .padding()
                 .previewDisplayName("Team Card Preview 2")

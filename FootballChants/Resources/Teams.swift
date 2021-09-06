@@ -34,7 +34,7 @@ extension TeamType {
     var managerImage: String {
         switch self {
         case .arsenal:
-            return ""
+            return "MA"
         case .astonVilla:
             return ""
         case .brighton:
